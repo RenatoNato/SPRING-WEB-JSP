@@ -1,0 +1,322 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] [1m---------------< [0;36mbr.com.devmedia.curso:intro-spring-mvc[0;1m >---------------[m
+[INFO] [1mBuilding intro-spring-mvc 0.0.1-SNAPSHOT[m
+[INFO]   from pom.xml
+[INFO] [1m--------------------------------[ war ]---------------------------------[m
+[INFO] 
+[INFO] [1m>>> [0;32mtomcat7:2.2:run-war[m [1m(default-cli)[0;1m > [0;1mpackage[m @ [36mintro-spring-mvc[0;1m >>>[m
+[INFO] 
+[INFO] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36mintro-spring-mvc[0;1m ---[m
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] [1m--- [0;32mcompiler:3.1:compile[m [1m(default-compile)[m @ [36mintro-spring-mvc[0;1m ---[m
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mintro-spring-mvc[0;1m ---[m
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] [1m--- [0;32mcompiler:3.1:testCompile[m [1m(default-testCompile)[m @ [36mintro-spring-mvc[0;1m ---[m
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] [1m--- [0;32msurefire:3.2.5:test[m [1m(default-test)[m @ [36mintro-spring-mvc[0;1m ---[m
+[INFO] 
+[INFO] [1m--- [0;32mwar:3.4.0:war[m [1m(default-war)[m @ [36mintro-spring-mvc[0;1m ---[m
+[INFO] Packaging webapp
+[INFO] Assembling webapp [intro-spring-mvc] in [C:\Users\cezar\Downloads\FONTE_CURSO_SPRING_MVC_18_FIMBO\intro-spring-mvc\target\intro-spring-mvc]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\cezar\Downloads\FONTE_CURSO_SPRING_MVC_18_FIMBO\intro-spring-mvc\src\main\webapp]
+[INFO] Building war: C:\Users\cezar\Downloads\FONTE_CURSO_SPRING_MVC_18_FIMBO\intro-spring-mvc\target\intro-spring-mvc.war
+[INFO] 
+[INFO] [1m<<< [0;32mtomcat7:2.2:run-war[m [1m(default-cli)[0;1m < [0;1mpackage[m @ [36mintro-spring-mvc[0;1m <<<[m
+[INFO] 
+[INFO] 
+[INFO] [1m--- [0;32mtomcat7:2.2:run-war[m [1m(default-cli)[m @ [36mintro-spring-mvc[0;1m ---[m
+[INFO] Running war on http://localhost:9090/intro-spring-mvc
+[INFO] Using existing Tomcat server configuration at C:\Users\cezar\Downloads\FONTE_CURSO_SPRING_MVC_18_FIMBO\intro-spring-mvc\target\tomcat
+[INFO] create webapp with contextPath: /intro-spring-mvc
+set. 30, 2024 9:35:37 PM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-bio-9090"]
+set. 30, 2024 9:35:37 PM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service Tomcat
+set. 30, 2024 9:35:37 PM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.47
+set. 30, 2024 9:35:37 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFORMAÇÕES: validateJarFile(C:\Users\cezar\Downloads\FONTE_CURSO_SPRING_MVC_18_FIMBO\intro-spring-mvc\target\intro-spring-mvc\WEB-INF\lib\javax.servlet-api-3.1.0.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+set. 30, 2024 9:35:40 PM org.apache.catalina.core.ApplicationContext log
+INFORMAÇÕES: 1 Spring WebApplicationInitializers detected on classpath
+set. 30, 2024 9:35:40 PM org.apache.catalina.core.ApplicationContext log
+INFORMAÇÕES: Initializing Spring root WebApplicationContext
+set. 30, 2024 9:35:40 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+INFORMAÇÕES: Root WebApplicationContext: initialization started
+set. 30, 2024 9:35:40 PM org.springframework.web.context.support.AnnotationConfigWebApplicationContext prepareRefresh
+INFORMAÇÕES: Refreshing Root WebApplicationContext: startup date [Mon Sep 30 21:35:40 BRT 2024]; root of context hierarchy
+set. 30, 2024 9:35:40 PM org.springframework.web.context.support.AnnotationConfigWebApplicationContext loadBeanDefinitions
+INFORMAÇÕES: Registering annotated classes: [class br.com.devmedia.curso.config.RootConfig]
+set. 30, 2024 9:35:41 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+GRAVE: Context initialization failed
+java.lang.IllegalStateException: Cannot load configuration class: br.com.devmedia.curso.config.RootConfig
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4937)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:122)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393)
+	... 17 more
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @5c523443
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:464)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:336)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91)
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291)
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221)
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174)
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153)
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73)
+	... 20 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @5c523443
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:203)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:197)
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:61)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:52)
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243)
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329)
+	... 32 more
+
+set. 30, 2024 9:35:41 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener
+java.lang.IllegalStateException: Cannot load configuration class: br.com.devmedia.curso.config.RootConfig
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4937)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:122)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393)
+	... 17 more
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @5c523443
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:464)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:336)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91)
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291)
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221)
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174)
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153)
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73)
+	... 20 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @5c523443
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:203)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:197)
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:61)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:52)
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243)
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329)
+	... 32 more
+
+set. 30, 2024 9:35:41 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: Error listenerStart
+set. 30, 2024 9:35:41 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: Context [/intro-spring-mvc] startup failed due to previous errors
+set. 30, 2024 9:35:41 PM org.apache.catalina.core.ApplicationContext log
+INFORMAÇÕES: Closing Spring root WebApplicationContext
+set. 30, 2024 9:35:41 PM org.springframework.web.context.support.AnnotationConfigWebApplicationContext doClose
+INFORMAÇÕES: Closing Root WebApplicationContext: startup date [Mon Sep 30 21:35:40 BRT 2024]; root of context hierarchy
+set. 30, 2024 9:35:41 PM org.springframework.web.context.support.AnnotationConfigWebApplicationContext doClose
+ADVERTÊNCIA: Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Mon Sep 30 21:35:40 BRT 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:583)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:116)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+set. 30, 2024 9:35:41 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalsForLeaks
+ADVERTÊNCIA: Failed to check for ThreadLocal references for web application [/intro-spring-mvc]
+java.lang.reflect.InaccessibleObjectException: Unable to make field java.lang.ThreadLocal$ThreadLocalMap java.lang.Thread.threadLocals accessible: module java.base does not "opens java.lang" to unnamed module @4586a8aa
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
+	at org.apache.catalina.loader.WebappClassLoader.checkThreadLocalsForLeaks(WebappClassLoader.java:2458)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1984)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1890)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:662)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5669)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+set. 30, 2024 9:35:41 PM org.apache.catalina.core.ContainerBase startInternal
+GRAVE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/intro-spring-mvc]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1123)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:800)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/intro-spring-mvc]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[/intro-spring-mvc]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5669)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 7 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.lang.ClassLoader sun.rmi.transport.Target.ccl accessible: module java.rmi does not "opens sun.rmi.transport" to unnamed module @4586a8aa
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesRmiTargets(WebappClassLoader.java:2659)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1987)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1890)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:662)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 9 more
+
+set. 30, 2024 9:35:41 PM org.apache.catalina.core.ContainerBase startInternal
+GRAVE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1123)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:302)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:732)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:341)
+	at org.apache.tomcat.maven.plugin.tomcat7.run.AbstractRunMojo.startContainer(AbstractRunMojo.java:1238)
+	at org.apache.tomcat.maven.plugin.tomcat7.run.AbstractRunMojo.execute(AbstractRunMojo.java:592)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:906)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:283)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:206)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1131)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:800)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 6 more
+
+[INFO] [1m------------------------------------------------------------------------[m
+[INFO] [1;31mBUILD FAILURE[m
+[INFO] [1m------------------------------------------------------------------------[m
+[INFO] Total time:  6.928 s
+[INFO] Finished at: 2024-09-30T21:35:41-03:00
+[INFO] [1m------------------------------------------------------------------------[m
+[ERROR] Failed to execute goal [32morg.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run-war[m [1m(default-cli)[m on project [36mintro-spring-mvc[m: [1;31mCould not start Tomcat[m: Failed to start component [StandardServer[-1]]: Failed to start component [StandardService[Tomcat]]: Failed to start component [StandardEngine[Tomcat]]: A child container failed during start -> [1m[Help 1][m
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[ERROR] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
